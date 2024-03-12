@@ -62,26 +62,50 @@ img{
 }
 
 .showcase-top{
-    position: relative;
-    z-index: 2;
-    height: 90px;
+    background-color:;
+    width: 90%;
+    display: flex;
+    gap: 20px;
+    padding: 25px;
+    margin-left: 70px;
+    justify-content: space-between;
 }
 
 .showcase-top img{
     width: 140px;
-    position: absolute;
-    top: 50%;
     left: 0;
-    transform: translate(40% , -50%);
+    position: relative;
 }
 
-.showcase-top a{
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translate(-60% , -50%);
+.uper-right{
+    display: flex;
+    gap: 20px;
+    width: 30%;
+    color: white;
 }
 
+.btn-1{
+      background-color: var(--primary-color);
+      height: 20px;
+      padding: 5px;
+      width: 60px;
+      border-radius: 4px;
+      text-align: center;
+}
+
+.lang{
+    display: flex;
+    height: 20px;
+    padding: 5px;
+    gap: 5px;
+    border: 1px solid white;
+    border-radius: 4px;
+    background-color: #000000bd;
+}
+
+.lang:hover {
+    border: 5px solid white;
+}
 .showcase-content{
     position: relative;
     margin: 0 26%;
@@ -115,55 +139,55 @@ img{
     padding-bottom: 1rem;
 }
 
-.showcase-content input{
-    position: absolute;
+.login{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.login a{
+    display: flex;
+    width: 25%;
+    gap: 10px;
+    font-weight: 600;
+}
+
+.login input{
+    /* position: absolute; */
     left: 30px;
     bottom: -8vh;
     width: 454px;
-    height: 3rem;
-    font-size: 1.3rem;
-    padding-left: 0.5rem;
+    font-size: .9rem;
+    padding: 0.7rem;
     border-radius: 2px;
-    background-color: #99999946;
+    background-color: #222831a6;
     border: 1px solid whitesmoke;
 }
 .showcase-content a{
     border-radius: 3px;
 }
+
+
 .btn{
     display: inline-block;
     background: var(--primary-color);
     color: white;
-    padding: 0.5rem 1.2rem;
+    padding: 0.7rem 1.2rem;
     font-size: 1rem;
     text-align: center;
     border: none;
     cursor: pointer;
-    border-radius: 2px;
+    border-radius: 3px;
     margin-right: 0.5rem;
     outline: none;
     box-shadow: 0 5px 3px rgba(0, 0, 0, 0.45);
 }
 
-.btn:hover{
-    opacity: 0.9;
+.btn-2{
+    width: 15%
 }
 
-.btn-rounded{
-    border-radius: 5px;
-}
-
-.showcase-content .btn-lg{
-    position: absolute;
-    right: 0;
-    bottom: -8vh;
-    padding: 0.5rem 1.2rem;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    height: 36px;
-    width: 14rem;
-    margin-left: px;
-}
 
 .card-0 , 
 .card-1,
@@ -192,7 +216,7 @@ img{
     grid-template-columns: 50% 40%;
     text-align: left;
     align-items: center;
-    padding: 25px 45px 50px;
+    padding: 30px 45px 50px;
 }
 
 .desc-1{
@@ -300,36 +324,6 @@ img{
     font-weight: 200;
 }
 
-.input{
-    display: inline-grid;
-    align-items: center;
-    grid-template-columns: 50% 40%;
-}
-
-.input input{
-    width: 400px;
-    height: 3rem;
-    padding: 4px;
-    left: 5px;
-    font-size: large;
-    border: #999999;
-    border-radius: 4px;
-    
-}
-
-.input button{
-    height: 3.7rem;
-    width: 320px;
-    left: 20px;
-    text-align: center;
-    background-color: var(--primary-color);
-    font-size: 1.5rem;
-    padding: 15px 32px;
-    border: none;
-    border-radius: 2px;
-    color: white;
-    border-radius: 4px;
-}
 
 .footer{
     max-width: 70%;
